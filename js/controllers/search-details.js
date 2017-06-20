@@ -17,7 +17,6 @@ define([
         $scope.errorMessage = "Something went wrong or no search reults";
       }     
     });
-
     }
   })
 });

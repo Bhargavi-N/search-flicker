@@ -14,6 +14,9 @@
         <!-- images grid -->
         <div class="row backgroundLightgrey">
             <!-- ngRepeat: searchlist in searchList -->
+            <div ng-if="searchList">
+              <p> Public images (Total images count : {{searchList.length}})</p>
+            </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe ng-scope" ng-repeat="searchlist in searchList">
               <img src="{{searchlist.url}}" class="img-responsive">
             </div><!-- end ngRepeat: searchlist in searchList -->
