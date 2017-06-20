@@ -24,5 +24,4 @@ Hit CTRL-C to stop the server
 
 
 //TODO
-Need to show image details
-Styling need to change
+Need to show image details by clicking on image, UI look and feel need to change
