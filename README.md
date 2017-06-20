@@ -21,3 +21,8 @@ Starting up http-server, serving C:\search-flicker
 Available on:
   http://localhost:8080
 Hit CTRL-C to stop the server
+
+
+//TODO
+Need to show image details
+Styling need to change
