@@ -24,6 +24,6 @@ Hit CTRL-C to stop the server
 
 
 //TODO
-Need to show image details by clicking on image, UI look and feel need to change, Need to fix UI issues like after clearing search string images should get delete from the view 
+Need to show image details by clicking on image, UI look and feel need to change
 
 

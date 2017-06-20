@@ -1,26 +1,26 @@
-<div ui-view="" class="container main-content ng-scope"><div class="container-fluid ng-scope" style="margin-top: 50px;">
-  <h3 class="colorClass">Search for images</h3><br>  
-  <form role="form" name="DetailsForm" novalidate="" ng-submit="serachImages(DetailsForm)" class="ng-dirty ng-valid-parse ng-valid ng-valid-required ng-submitted">
-    <div class="row center-block text-center"> 
-      <div class="form-group">
-          <input type="text" name="searchstring" class="form-control ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched" id="searchstring" placeholder="Search String" ng-model="searchstring" required="">
-      </div>
-      <button type="submit" ng-disabled="DetailsForm.$invalid" class="btn btn-clear pull-center">Search</button>
-    </div>
-    <br>
-    <br> 
-    <!-- Shift Details -->
-    <div class="row backgroundLightgrey">
-      <div>
-        <!-- ngRepeat: searchlist in searchList -->
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe ng-scope" ng-repeat="searchlist in searchList">
-            <img src="{{searchlist.url}}" class="img-responsive">
-        </div><!-- end ngRepeat: searchlist in searchList -->
-      </div>
+<div ui-view="" class="container main-content ng-scope">
+    <div class="container-fluid ng-scope" style="margin-top: 50px;">
+      <h3 class="colorClass">Search for images</h3><br>  
+        <form role="form" name="DetailsForm" novalidate="" ng-submit="serachImages(DetailsForm)" class="ng-dirty ng-valid-parse ng-valid ng-valid-required ng-submitted">
+          <div class="row center-block text-center"> 
+            <div class="form-group">
+              <input type="text" name="searchstring" class="form-control ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched" id="searchstring" placeholder="Search String" ng-model="searchstring" required="">
+            </div>
+            <button type="submit" ng-disabled="DetailsForm.$invalid" class="btn btn-clear pull-center">Search</button>
+          </div>
+        </form>
+        <br>
+        <br> 
+        <!-- images grid -->
+        <div class="row backgroundLightgrey">
+            <!-- ngRepeat: searchlist in searchList -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe ng-scope" ng-repeat="searchlist in searchList">
+              <img src="{{searchlist.url}}" class="img-responsive">
+            </div><!-- end ngRepeat: searchlist in searchList -->
+        </div>
     </div>
     <br>
     <div class="col-md-6" style="left: 300px;">    
       <p ng-show="showNoDataError" class="bg-danger dangerCustom ng-binding ng-hide">{{errorMessage}}</p>
-    </div>
-  </form>
-</div>&nbsp;&nbsp;</div>
+    </div>  
+</div>
